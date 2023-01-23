@@ -5,26 +5,28 @@ using UnityEngine;
 public struct Card
 {
     [SerializeField]
-    private Value _value;
+    public Value Value;
     [SerializeField]
-    private Suit _suit;
-
-    public Value Value => _value;
-    public Suit Suit => _suit;
-
-    public void SetCard(Value value, Suit suit)
+    public Suit Suit;
+    public Card (Value value = Value.NULL, Suit suit = Suit.NULL)
     {
-        _value = value;
-        _suit = suit;
+        Value = value;
+        Suit = suit;
+    }
+
+    public Card(int valueInt = (int)Value.NULL, int suitInt = (int)Suit.NULL)
+    {
+        Value = (Value)valueInt;
+        Suit = (Suit)suitInt;
     }
 }
 
 public enum Suit
-{
-    BLACK, SPADE, CLUB, RED, HEART, DIAMOND, 
+{ 
+    SPADE, CLUB, HEART, DIAMOND, NULL, ERROR
 }
 
 public enum Value
 {
-    JOKER, ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING,
+    NULL, ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, JOKER, EMPTYDECK
 }
