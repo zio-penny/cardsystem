@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class SpriteSwapper : MonoBehaviour
 {
-    Color _black = new Color(34/255, 17/255,34/255);
-    Color _red = new Color(94/255, 17/255, 23/255);
+    [SerializeField] Color _black = new Color(34.0f/255.0f, 17.0f/255.0f,34.0f/255.0f);
+    [SerializeField] Color _red = new Color(94/255.0f, 17/255.0f, 23/255.0f);
 
     MeshRenderer _meshRenderer;
     Material _material;

@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CardView : MonoBehaviour
 {
-    [SerializeField] Card _card;
+    Card _card = new Card();
     [SerializeField] SpriteSwapper _valueSprite;
     [SerializeField] SpriteSwapper _suitSprite;
-
-    bool _faceUp = false;
     private Animator _animator;
 
     private void Awake()
@@ -29,14 +25,12 @@ public class CardView : MonoBehaviour
 
     public void UpdateSprites()
     {
-        _valueSprite.SetValue(_card);
-        _suitSprite.SetSuit(_card);
+            _valueSprite.SetValue(_card);
+            _suitSprite.SetSuit(_card);
     }
 
     public void Flip()
     {
-        _faceUp = !_faceUp;
-        _animator.SetBool("face_up", _faceUp);
         _animator.SetTrigger("flip");
     }
 }

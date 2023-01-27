@@ -222,7 +222,6 @@ GameObject:
   - component: {fileID: 2689185723511555625}
   - component: {fileID: 5885835454434211032}
   - component: {fileID: 7010368717042156346}
-  - component: {fileID: 523755193599336726}
   m_Layer: 0
   m_Name: CardBack
   m_TagString: Untagged
@@ -295,18 +294,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &523755193599336726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5255192343376163293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4fb52fa9153e974daa1ad8e3a1e0a7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6150139132880586477
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +348,6 @@ MonoBehaviour:
     Suit: 4
   _valueSprite: {fileID: 4012242523111345319}
   _suitSprite: {fileID: 3926179911574147412}
-  _background: {fileID: 0}
 --- !u!95 &4963881632706932234
 Animator:
   serializedVersion: 5
@@ -438,7 +424,6 @@ GameObject:
   - component: {fileID: 8833052958654428909}
   - component: {fileID: 4489435150851577225}
   - component: {fileID: 43429505386359815}
-  - component: {fileID: 1283116789208804232}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -511,15 +496,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1283116789208804232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8904158503084676382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4fb52fa9153e974daa1ad8e3a1e0a7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
